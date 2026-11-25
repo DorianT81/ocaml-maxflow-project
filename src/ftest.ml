@@ -33,7 +33,7 @@ let () =
   let _graph2= (gmap graph ( (fun x -> string_of_int (2*(int_of_string x) )))) in
    let _graph3= (add_arc (gmap graph (fun x -> int_of_string x)) 0 1 6 )in
    let _graph4= gmap _graph3 (fun x-> string_of_int x) in
-  let () = write_file outfile _graph4 in
+  let () = export outfile _graph4 in
 
   ()
 
